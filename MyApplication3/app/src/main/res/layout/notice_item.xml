@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:elevation="5dp"
+    android:layout_height="70dp">
+
+    <RelativeLayout
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/notice_title"
+            android:text="공지사항"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:fontFamily="@font/maplestory_bold" />
+
+        <TextView
+            android:id="@+id/notice_date"
+            android:text="20XX-XX-XX"
+
+            android:layout_below="@id/notice_title"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"/>
+
+        <ImageView
+            android:id="@+id/not_read"
+            android:layout_width="17dp"
+
+            android:layout_height="11dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_new"
+            android:visibility="visible" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

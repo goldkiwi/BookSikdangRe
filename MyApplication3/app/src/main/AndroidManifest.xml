@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+        <activity android:name=".mypage.MySettingActivity"></activity>
+        <activity android:name=".mypage.AppSettingActivity" />
+        <activity
+            android:name=".mypage.NotificationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".mypage.MyCouponAcitivity" />
+        <activity
+            android:name=".mypage.PaymentActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".storeActivity.EditReviewActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".storeActivity.StoreActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".bookhistory.BookHistoryActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mainPage.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".bookActivity.PayCompleteSuccess"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".bookActivity.PayActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".bookActivity.BookActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MapActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mainPage.Connect_hash_tag"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".start.StartActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".start.RegisterActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".start.FindPassword"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".start.FindEmail"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".start.CustomerLogInActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApplication.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mainPage.Sikdang_main"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mainPage.What_eat_today"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".addPage.Add_page"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mainPage.SikdangList"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sikdangChoicePage.SikdangChoice"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity android:name=".rest.Resmain.MainActivity_res" />
+        <activity android:name=".rest.Resmain.SikdangMain_res" />
+        <activity android:name=".rest.Resmain.ChoiceSikdangPage_res" />
+        <activity android:name=".rest.ResInfo.ResInfoActivity" />
+        <activity android:name=".rest.ResInfo.SellInfoActivity" />
+        <activity android:name=".rest.ResInfo.ResPrivateSettingActivity" />
+        <activity android:name=".rest.Resmain.ResLoginActivity" />
+
+
+
+        <activity android:name=".start.SelectLoginActivity" />
+
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="x806jwcpgr" />
+    </application>
+
+</manifest>

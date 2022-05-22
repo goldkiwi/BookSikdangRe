@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cancelInfoTV"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="예약취소정보"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/refundbtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="환불 진행"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/closebtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="닫기"
+        android:textSize="24sp"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="500dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="쿠폰 선택"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/couponListRV"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/couponSelectButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="선택완료" />
+</LinearLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_height">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_back"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="선물보기"
+                android:textSize="28sp"
+                android:fontFamily="@font/maplestory_bold"/>
+        </LinearLayout>
+    </Toolbar>
+
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/item_image"
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:id="@+id/brand_name"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maplestorylight"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="브랜드"/>
+
+            <TextView
+                android:id="@+id/item_name"
+
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="퍼페티)츄파춥스 250"
+                android:textColor="@color/black"
+                android:fontFamily="@font/maplestory_bold"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/item_barcode"
+
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/barcode_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/maplestory_bold"
+                    android:textColor="@color/black"
+                    android:text="바코드 번호"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/separator_color"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/valid_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="유효기간"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="2020년 9월 16일"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/maplestory_bold"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/separator_color"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="주문번호"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/gift_id"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="817574120"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/maplestory_bold"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/separator_color"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="교환처"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/exchange"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/maplestory_bold"
+                        android:gravity="center"
+                        android:text="브랜드"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/separator_color"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="선물수신일"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/date"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="2020년 3월 14일"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/maplestory_bold"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/separator_color"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="쿠폰상태"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/used"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="사용안함"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/maplestory_bold"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/separator_color"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon_infomation"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_infomation"
+                    android:outlineAmbientShadowColor="@color/darker_gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/icon_infomation"
+                    android:layout_marginLeft="10dp"
+                    android:text="교환권 취소/환불 안내"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/maplestory_bold"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/icon_infomation"
+                    android:fontFamily="@font/maplestorylight"
+                    android:textColor="@color/darker_gray"
+                    android:text="@string/gift_info"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

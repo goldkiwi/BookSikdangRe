@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:text="회원정보"
+        tools:layout_editor_absoluteX="434dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="가입정보"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/ps_signInfoTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="계정정보"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/ps_idInfoTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ps_editPWBtn"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="비밀번호 변경"
+        android:textSize="30sp" />
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1000dp"
+    android:layout_height="680dp">
+
+    <LinearLayout
+        android:layout_width="850dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ts_floorTV"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="몇층"
+            android:textSize="30sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ts_tableSettingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ts_floorImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    app:srcCompat="@drawable/sikdangstr" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ts_addRectTableBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사각형 테이블" />
+
+        <Button
+            android:id="@+id/ts_addCircleTableBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="원형 테이블" />
+
+        <Button
+            android:id="@+id/ts_changeFloorBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="층수 변경" />
+
+        <Button
+            android:id="@+id/ts_changeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="식당 단면도 변경" />
+
+        <Button
+            android:id="@+id/ts_changeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="변경" />
+
+        <Button
+            android:id="@+id/ts_deleteFloorBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="층 삭제" />
+
+        <Button
+            android:id="@+id/ts_cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="취소" />
+    </LinearLayout>
+
+</LinearLayout>

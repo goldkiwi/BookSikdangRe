@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="400dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/store_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가게이름"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="내용"
+                android:paddingLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="총 금액">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

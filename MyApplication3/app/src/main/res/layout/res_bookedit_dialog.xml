@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/addTableBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="테이블 추가"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/editTableBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="테이블 변경"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/cancelTableBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="테이블 삭제"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/editTimeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="시간 변경"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:text="취소" />
+</LinearLayout>

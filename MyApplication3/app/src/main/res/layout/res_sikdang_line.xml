@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/sikdangImage"
+        android:layout_width="226dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/foodimage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sikdangLine_NameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="식당이름"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/sikdangLine_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="식당주소" />
+
+        <TextView
+            android:id="@+id/sikdangLine_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="식당전화번호" />
+    </LinearLayout>
+</LinearLayout>

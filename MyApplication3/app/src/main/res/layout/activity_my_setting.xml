@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/close"
+                android:src="@drawable/icon_close"
+
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="프로필 편집"
+                android:fontFamily="@font/maplestory_bold"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/close"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/done"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+
+                android:src="@drawable/icon_done"/>
+
+        </RelativeLayout>
+    </Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ProgressBar
+                    android:id="@+id/loading"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_image"
+                    android:src="@drawable/profile_placeholder"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:civ_border_color="@color/darker_gray"
+                    app:civ_border_width="2dp"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:paddingVertical="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/maplestory_bold"
+                    android:text="프로필 사진 변경"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="#00A3D2"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                app:cardUseCompatPadding="true"
+                app:cardElevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:weightSum="2"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/from_folder"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/from_folder"/>
+                        <ImageView
+                            android:id="@+id/from_camera"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/from_camera"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/maplestorylight"
+                            android:text="이름"
+                            android:textColor="@color/darker_gray"/>
+
+                        <EditText
+                            android:id="@+id/edit_name"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/maplestory_bold"
+                            android:textColor="@color/black"
+                            android:hint="이름을 적어주세요"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/maplestorylight"
+                            android:text="사용자 이름"
+                            android:textColor="@color/darker_gray"/>
+
+                        <EditText
+                            android:id="@+id/edit_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="사용자 이름을 적어주세요"
+                            android:fontFamily="@font/maplestory_bold"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/maplestorylight"
+                            android:text="이메일"
+                            android:textColor="@color/darker_gray"/>
+
+                        <EditText
+                            android:id="@+id/edit_email"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/maplestory_bold"
+                            android:textColor="@color/black"
+                            android:hint="이메일을 적어주세요"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/maplestorylight"
+                            android:text="휴대폰 변경"
+                            android:textColor="@color/darker_gray"/>
+
+                        <EditText
+                            android:id="@+id/edit_phone_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="휴대폰 번호를 적어주세요"
+                            android:fontFamily="@font/maplestory_bold"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

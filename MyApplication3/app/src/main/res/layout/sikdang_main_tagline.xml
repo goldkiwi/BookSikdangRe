@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ToggleButton
+            android:id="@+id/toggleBtn_tagline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공부"
+            android:textOff="배고픈"
+            android:textOn="무엇을"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleBtn_tagline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtn_tagline2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="하기"
+            android:textOff="이밤엔"
+            android:textOn="먹고"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtn_tagline3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleBtn_tagline2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="싫어"
+            android:textOff="야식"
+            android:textOn="싶은가"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

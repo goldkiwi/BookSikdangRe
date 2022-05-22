@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/changeSikdangNameBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="식당 이름 변경"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/editSikdangExpBntn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="식당 설명 수정"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/editSikdangImageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="식당 이미지 수정"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/editMenuBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="메뉴 수정"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/ss_editTableBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="테이블 설정"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/booktimeSettingBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="예약 시간 설정"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="식당 위치 수정"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/ss_cancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="닫기"
+        android:textSize="24sp" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="500dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="식당이름변경"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/csndSikdangName"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="식당이름"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/afterSikdangNameRT"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="변경할 식당 이름"
+        android:selectAllOnFocus="true"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/csndChangeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="변경"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/csndcancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="취소"
+        android:textSize="30sp" />
+</LinearLayout>
